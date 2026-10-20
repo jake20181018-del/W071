@@ -1,0 +1,329 @@
+<!DOCTYPE html me>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快樂毛小孩 - 你的寶貝專屬小天地</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        milk: {
+                            50: '#FAF6F0',
+                            100: '#F4ECE1',
+                            200: '#E8D8C3',
+                            300: '#DCC3A5',
+                            400: '#CFA881',
+                            500: '#B88A5E',
+                            600: '#9E6F45',
+                            700: '#7F5432',
+                            800: '#5C3D24',
+                            900: '#3D2817',
+                        },
+                        warmWarm: '#F7F3EE',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FAF6F0;
+            color: #5C3D24;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -10px rgba(184, 138, 94, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-milk-50 text-milk-800 min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 bg-milk-50/90 backdrop-blur-md z-50 border-b border-milk-200/60">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-milk-200 p-2 rounded-full text-milk-700">
+                    <i data-lucide="dog" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold text-milk-800 tracking-wide">快樂毛小孩</span>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-milk-700">
+                <a href="#about" class="hover:text-milk-500 transition">關於我們</a>
+                <a href="#services" class="hover:text-milk-500 transition">服務項目</a>
+                <a href="#appointment" class="hover:text-milk-500 transition">線上記錄與預約</a>
+                <a href="#contact" class="hover:text-milk-500 transition">找我們聊聊</a>
+            </nav>
+            <a href="#appointment" class="bg-milk-500 hover:bg-milk-600 text-white px-4 py-2 rounded-full text-sm font-medium transition shadow-sm">
+                預約洗洗澡
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="max-w-5xl mx-auto px-4 py-12 md:py-20 flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-center md:text-left">
+                <span class="inline-block bg-milk-100 text-milk-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
+                    ✨ 上班族的安心後援班
+                </span>
+                <h1 class="text-3xl md:text-5xl font-bold text-milk-900 leading-tight mb-4">
+                    今天下班後，<br>換寶貝閃閃發亮地點頭迎接收工！
+                </h1>
+                <p class="text-milk-700 text-base md:text-lg mb-8 leading-relaxed">
+                    哈囉！辛苦工作一整天了嗎？放心把家裡的小寶貝交給我吧～我們這裡有最溫柔的手感、無壓力的美容環境，還有隨時更新的萌照，讓你在辦公室也能被療癒爆表！
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#appointment" class="bg-milk-500 hover:bg-milk-600 text-white px-6 py-3 rounded-2xl font-medium flex items-center justify-center gap-2 shadow-sm transition">
+                        <i data-lucide="calendar"></i> 幫小寶貝預約時間
+                    </a>
+                    <a href="#services" class="bg-milk-100 hover:bg-milk-200 text-milk-800 px-6 py-3 rounded-2xl font-medium text-center transition">
+                        看看我們做什麼
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 w-full flex justify-center">
+                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-orange-100">
+                    <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=800" 
+                         alt="可愛的柴犬" 
+                         class="w-full h-full object-cover mix-blend-multiply bg-orange-100/50"
+                         onerror="this.src='https://placehold.co/400x400/FFEDD5/5C3D24?text=柴犬-快樂毛小孩'">
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl flex items-center gap-3">
+                        <div class="bg-emerald-100 p-2 rounded-full text-emerald-600">
+                            <i data-lucide="heart" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-milk-900">小型犬專屬寵愛</p>
+                            <p class="text-xs text-milk-600">慢工細活，不催不趕不害怕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-milk-100/60 py-16">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="text-center max-w-xl mx-auto mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-milk-900 mb-2">為什麼毛爸毛媽最放心地交給我們？</h2>
+                    <p class="text-milk-600">懂你忙碌的步調，更懂小寶貝微小卻敏感的心思</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-milk-50 p-6 rounded-2xl soft-shadow border border-milk-100">
+                        <div class="w-12 h-12 bg-milk-200 rounded-xl flex items-center justify-center text-milk-700 mb-4">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-milk-900 mb-2">彈性接送時間</h3>
+                        <p class="text-sm text-milk-700 leading-relaxed">
+                            知道你經常為了趕加班心急如焚？沒關係，只要提前跟我們說，我們會準備好舒適的小休息區讓牠等你下班。
+                        </p>
+                    </div>
+
+                    <div class="bg-milk-50 p-6 rounded-2xl soft-shadow border border-milk-100">
+                        <div class="w-12 h-12 bg-milk-200 rounded-xl flex items-center justify-center text-milk-700 mb-4">
+                            <i data-lucide="camera" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-milk-900 mb-2">即時萌照即時通</h3>
+                        <p class="text-sm text-milk-700 leading-relaxed">
+                            洗完澡、剪好毛的第一時間，就會拍下漂亮的大頭照傳給你！讓你工作空檔打開手機直接被萌翻，疲勞全消。
+                        </p>
+                    </div>
+
+                    <div class="bg-milk-50 p-6 rounded-2xl soft-shadow border border-milk-100">
+                        <div class="w-12 h-12 bg-milk-200 rounded-xl flex items-center justify-center text-milk-700 mb-4">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-milk-900 mb-2">1 對 1 零壓力護理</h3>
+                        <p class="text-sm text-milk-700 leading-relaxed">
+                            小型犬特別容易緊張，我們一次只專心服務少數寶貝，沒有吵雜的大狗叫聲，就像來朋友家作客一樣自在！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="max-w-5xl mx-auto px-4 py-16">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-milk-900 mb-2">工作室的服務項目</h2>
+                <p class="text-milk-600">貴賓、馬爾濟斯、博美、吉娃娃、法鬥都歡迎喔！</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 項目 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-milk-200/80 flex flex-col justify-between hover:border-milk-400 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-milk-900">基礎洗泡泡澡</h3>
+                            <span class="bg-milk-100 text-milk-800 text-xs font-bold px-3 py-1 rounded-full">NT$ 600 起</span>
+                        </div>
+                        <p class="text-milk-700 text-sm mb-4 leading-relaxed">
+                            包含草本天然洗劑洗沐兩次、清耳朵、剪指甲、修腳底毛、擠肛門腺與吹整服務。
+                        </p>
+                        <ul class="text-xs text-milk-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-milk-500"></i> 使用敏弱肌專用天然植物洗劑</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-milk-500"></i> 全程恆溫水流與低噪吹風機</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectService('基礎洗泡泡澡')" class="w-full py-2 bg-milk-100 hover:bg-milk-200 text-milk-800 rounded-xl text-sm font-medium transition">
+                        選擇這個服務
+                    </button>
+                </div>
+
+                <!-- 項目 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-milk-200/80 flex flex-col justify-between hover:border-milk-400 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-milk-900">精緻大美容造型</h3>
+                            <span class="bg-milk-100 text-milk-800 text-xs font-bold px-3 py-1 rounded-full">NT$ 1,200 起</span>
+                        </div>
+                        <p class="text-milk-700 text-sm mb-4 leading-relaxed">
+                            包含基礎洗澡的所有內容，加上溝通好的全身造型修剪（泰迪熊頭、圓圓頭、夏日涼爽款等）。
+                        </p>
+                        <ul class="text-xs text-milk-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-milk-500"></i> 依據狗狗臉型細心設計造型</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-milk-500"></i> 附贈手作日系可愛小領結/飾品</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectService('精緻大美容造型')" class="w-full py-2 bg-milk-500 hover:bg-milk-600 text-white rounded-xl text-sm font-medium transition">
+                        選擇這個服務
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="bg-milk-100/40 py-16">
+            <div class="max-w-2xl mx-auto px-4">
+                <div class="bg-white p-8 rounded-3xl border border-milk-200 soft-shadow">
+                    <div class="text-center mb-6">
+                        <span class="text-xs font-bold tracking-wider text-milk-500 uppercase">ONLINE BOOKING</span>
+                        <h2 class="text-2xl font-bold text-milk-900 mt-1">線上記錄與預約</h2>
+                        <p class="text-xs text-milk-600 mt-1">填寫下方資訊，我們會盡快與您確認時間喔！</p>
+                    </div>
+
+                    <form id="bookingForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-milk-700 mb-1">毛爸/毛媽稱呼 *</label>
+                                <input type="text" required placeholder="例如：陳小姐" class="w-full px-4 py-2.5 rounded-xl border border-milk-200 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm bg-milk-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-milk-700 mb-1">聯絡電話 *</label>
+                                <input type="tel" required placeholder="0912-345-678" class="w-full px-4 py-2.5 rounded-xl border border-milk-200 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm bg-milk-50">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-milk-700 mb-1">寶貝的名字 *</label>
+                                <input type="text" required placeholder="例如：奶茶" class="w-full px-4 py-2.5 rounded-xl border border-milk-200 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm bg-milk-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-milk-700 mb-1">品種 / 體重 *</label>
+                                <input type="text" required placeholder="例如：貴賓 / 3.5 kg" class="w-full px-4 py-2.5 rounded-xl border border-milk-200 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm bg-milk-50">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-milk-700 mb-1">想預約的服務 *</label>
+                            <select id="serviceSelect" required class="w-full px-4 py-2.5 rounded-xl border border-milk-200 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm bg-milk-50">
+                                <option value="">請選擇預約項目</option>
+                                <option value="基礎洗泡泡澡">基礎洗泡泡澡</option>
+                                <option value="精緻大美容造型">精緻大美容造型</option>
+                                <option value="其他詢問">純諮詢 / 其他需求</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-milk-700 mb-1">備註（狗狗個性、下班接送時間等）</label>
+                            <textarea rows="3" placeholder="例如：寶貝比較害羞怕大聲，預計下班 18:30 去接他～" class="w-full px-4 py-2.5 rounded-xl border border-milk-200 focus:outline-none focus:ring-2 focus:ring-milk-400 text-sm bg-milk-50"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-milk-500 hover:bg-milk-600 text-white font-medium rounded-xl transition shadow-md">
+                            送出預約申請
+                        </button>
+                    </form>
+
+                    <div id="successMsg" class="hidden text-center py-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-milk-900">預約申請已收到囉！</h3>
+                        <p class="text-sm text-milk-600 mt-1">我們會在半天之內透過電話或 LINE 跟你確認時間！謝謝你！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="max-w-5xl mx-auto px-4 py-16">
+            <div class="bg-milk-200/50 p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center md:text-left">
+                    <h3 class="text-xl font-bold text-milk-900">隨時來跟我們聊聊！</h3>
+                    <p class="text-sm text-milk-700">任何關於毛小孩保養、洗澡預約的問題，歡迎直接加 Line 或電話聯繫。</p>
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center md:justify-start text-xs text-milk-800">
+                        <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-4 h-4"></i> 02-2345-6789</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="message-circle" class="w-4 h-4"></i> LINE ID: @happypaws</span>
+                        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i> 台北市溫馨路 100 號 1 樓</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="copyLineId()" class="bg-milk-800 hover:bg-milk-900 text-white px-5 py-2.5 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                        <i data-lucide="copy" class="w-4 h-4"></i> 複製 LINE ID
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-milk-900 text-milk-100 py-8 border-t border-milk-800">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-3">
+            <div class="flex items-center justify-center gap-2 text-lg font-bold">
+                <i data-lucide="dog" class="w-5 h-5 text-milk-300"></i>
+                <span>快樂毛小孩寵物工作室</span>
+            </div>
+            <p class="text-xs text-milk-300/80">
+                專屬小型犬的溫馨洗澡與美容空間 · 給寶貝像家一樣的疼愛
+            </p>
+            <div class="pt-4 border-t border-milk-800/60 text-xs text-milk-400 flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>© 2026 快樂毛小孩寵物工作室 All Rights Reserved.</p>
+                <p class="font-medium text-milk-200">製作：亞力山大.安德森</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 初始化 Lucide 圖示
+        lucide.createIcons();
+
+        // 選擇服務並滾動至預約區
+        function selectService(serviceName) {
+            const select = document.getElementById('serviceSelect');
+            select.value = serviceName;
+            document.getElementById('appointment').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 處理預約表單提交
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('bookingForm').classList.add('hidden');
+            document.getElementById('successMsg').classList.remove('hidden');
+        }
+
+        // 複製 LINE ID 功能
+        function copyLineId() {
+            const lineId = "@happypaws";
+            const tempInput = document.createElement("input");
+            tempInput.value = lineId;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("已複製 LINE ID：@happypaws！歡迎加好友與我們聯繫！");
+        }
+    </script>
+</body>
+</html>
